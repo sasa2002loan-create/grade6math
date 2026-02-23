@@ -51,6 +51,7 @@ if selected_lesson == "មេរៀនទី ៦ : បរិមាត្រ":
         if st.button("គណនា"):
             P = a*4
             st.success(f"បរិមាត្រការេគឺ៖ {P} m")
+            st.info(f"រូបមន្តបរិមាត្រការេគឺ៖ ជ្រុង \\time 4$")
             st.info(f"រូបមន្ត៖ $P = (a) \\times 4$")
 
 elif selected_lesson == "មេរៀនទី ១៤ : ល្បឿន":
@@ -74,4 +75,5 @@ elif selected_lesson == "មេរៀនទី ១៦ : ភាគរយ":
 
 
 # បន្ថែមមេរៀនផ្សេងៗទៀតតាមលំនាំខាងលើ...
+
 
