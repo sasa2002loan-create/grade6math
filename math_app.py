@@ -37,7 +37,7 @@ selected_lesson = st.sidebar.selectbox("មាតិកាមេរៀន", less
 
 if selected_lesson == "មេរៀនទី ៦ : បរិមាត្រ":
     st.header("📏 គណនាបរិមាត្រ")
-    shape = st.selectbox("ជ្រើសរើសរូបរាង", ["ចតុកោណកែង", "ការ៉េ"])
+    shape = st.selectbox("ជ្រើសរើសរូបរាង", ["ចតុកោណកែង", "ការេ","រង្វង់"])
     
     if shape == "ចតុកោណកែង":
         L = st.number_input("បញ្ចូលបណ្តោយ (m)", min_value=0.0)
@@ -46,6 +46,12 @@ if selected_lesson == "មេរៀនទី ៦ : បរិមាត្រ":
             P = 2 * (L + W)
             st.success(f"បរិមាត្រចតុកោណកែងគឺ៖ {P} m")
             st.info(f"រូបមន្ត៖ $P = (L + W) \\times 2$")
+    if shape == "ការេ":
+        a = st.number_input("បញ្ចូលជ្រុង (m)", min_value=0.0)
+        if st.button("គណនា"):
+            P = a*4
+            st.success(f"បរិមាត្រការេគឺ៖ {P} m")
+            st.info(f"រូបមន្ត៖ $P = (a) \\times 4$")
 
 elif selected_lesson == "មេរៀនទី ១៤ : ល្បឿន":
     st.header("🏃 គណនាល្បឿន ចម្ងាយ និងរយៈពេល")
@@ -68,3 +74,4 @@ elif selected_lesson == "មេរៀនទី ១៦ : ភាគរយ":
 
 
 # បន្ថែមមេរៀនផ្សេងៗទៀតតាមលំនាំខាងលើ...
+
