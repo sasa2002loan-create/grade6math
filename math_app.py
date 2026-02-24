@@ -31,7 +31,7 @@ lessons = [
     "មេរៀនទី ២០ : មាឌ និងផ្ទៃក្រឡាសូលីត"
 ]
 
-selected_lesson = st.radio("មាតិកាមេរៀន", lessons)
+selected_lesson = st.sidebar.selectbox("មាតិកាមេរៀន", lessons)
 
 # --- ការដោះស្រាយតាមមេរៀននីមួយៗ ---
 
@@ -75,6 +75,7 @@ elif selected_lesson == "មេរៀនទី ១៦ : ភាគរយ":
 
 
 # បន្ថែមមេរៀនផ្សេងៗទៀតតាមលំនាំខាងលើ...
+
 
 
 
